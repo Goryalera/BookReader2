@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">First Kotlin</string>
+    <string name="image_desc">Описание изображения</string>
+
+</resources>

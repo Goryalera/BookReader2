@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/buttonadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/addimpressions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add impressions"
+        android:textStyle="bold"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="16dp"
+        android:textSize="25sp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1" />
+</LinearLayout>
