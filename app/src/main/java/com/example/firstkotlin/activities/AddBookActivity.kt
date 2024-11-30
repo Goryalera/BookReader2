@@ -13,7 +13,7 @@ import com.example.firstkotlin.data.Book
 import com.example.firstkotlin.data.BookRepository
 import java.io.InputStream
 import java.nio.charset.Charset
-
+//ауе!!!!!!!!!!!!!!
 class AddBookActivity : AppCompatActivity() {
 
     private lateinit var bookTitle: EditText
@@ -21,7 +21,7 @@ class AddBookActivity : AppCompatActivity() {
     private lateinit var bookGenre: EditText
     private lateinit var selectFileButton: Button
     private lateinit var saveBookButton: Button
-    private lateinit var backButton: ImageButton // Объявление кнопки "Назад"
+    private lateinit var backButton: ImageButton
 
     private var selectedBookUri: Uri? = null
     private lateinit var bookRepository: BookRepository // Экземпляр репозитория
@@ -47,14 +47,13 @@ class AddBookActivity : AppCompatActivity() {
         bookGenre = findViewById(R.id.bookGenre)
         selectFileButton = findViewById(R.id.selectFileButton)
         saveBookButton = findViewById(R.id.saveBookButton)
-        backButton = findViewById(R.id.back_btn) // Инициализация кнопки "Назад"
+        backButton = findViewById(R.id.back_btn)
 
         // Инициализируем жанры, если они еще не были добавлены
         bookRepository.initializeGenres()
 
-        // Обработка кнопки "back_btn" (возврат на предыдущий экран)
         backButton.setOnClickListener {
-            onBackPressed() // Возвращаемся на предыдущий экран
+            onBackPressed()
         }
 
         // Открытие диалога выбора файла
@@ -108,9 +107,9 @@ class AddBookActivity : AppCompatActivity() {
             title = title,
             author = author,
             genre = genre,
-            description = bookDescription, // Передаем описание
-            text = bookText,               // Передаем текст книги
-            totalPages = totalPages,       // Передаем количество страниц
+            description = bookDescription,
+            text = bookText,
+            totalPages = totalPages,
             currentPage = 0,
             progress = 0,
             coverImageRes = R.drawable.default_book_cover // Добавляем значение по умолчанию для coverImageRes
@@ -120,3 +119,4 @@ class AddBookActivity : AppCompatActivity() {
         Toast.makeText(this, "Book saved!", Toast.LENGTH_SHORT).show()
     }
 }
+//ауе!!!!!!!!!!!!!!
