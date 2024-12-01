@@ -21,27 +21,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Настройка кнопки "Library"
         val libraryButton = findViewById<Button>(R.id.button_library)
         libraryButton.setOnClickListener {
             // Ваш код для перехода в библиотеку
         }
 
-        // Настройка кнопки "Book"
         val bookButton = findViewById<Button>(R.id.button_book)
         bookButton.setOnClickListener {
             // Ваш код для перехода в экран с книгой
         }
 
-        // Настройка кнопки "Search"
         val searchButton = findViewById<Button>(R.id.button_search)
         searchButton.setOnClickListener {
             // Ваш код для перехода на экран поиска
         }
 
         // Настройка ImageView для перехода в ProfileActivity и установка базового изображения
-        val imageView = findViewById<ImageView>(R.id.my_image_view)  // Используем ImageView вместо Button
-        imageView.setImageResource(R.drawable.default_avatar)  // Устанавливаем базовое изображение
+        val imageView = findViewById<ImageView>(R.id.my_image_view)
+        imageView.setImageResource(R.drawable.default_avatar)
         imageView.setOnClickListener {
             val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent) // Переход на экран профиля
@@ -50,7 +47,6 @@ class MainActivity : AppCompatActivity() {
         // Получаем EditText для никнейма
         nicknameEditText = findViewById(R.id.nickname)
 
-        // Обработчик нажатия клавиши "Enter" или "Done"
         nicknameEditText.setOnEditorActionListener { v, actionId, event ->
             // Проверяем, если была нажата клавиша "Enter"
             if (event != null && event.keyCode == KeyEvent.KEYCODE_ENTER) {

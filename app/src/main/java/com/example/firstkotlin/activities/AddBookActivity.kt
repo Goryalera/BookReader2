@@ -13,7 +13,7 @@ import com.example.firstkotlin.data.Book
 import com.example.firstkotlin.data.BookRepository
 import java.io.InputStream
 import java.nio.charset.Charset
-//ауе!!!!!!!!!!!!!!
+
 class AddBookActivity : AppCompatActivity() {
 
     private lateinit var bookTitle: EditText
@@ -119,4 +119,3 @@ class AddBookActivity : AppCompatActivity() {
         Toast.makeText(this, "Book saved!", Toast.LENGTH_SHORT).show()
     }
 }
-//ауе!!!!!!!!!!!!!!

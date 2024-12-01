@@ -22,7 +22,7 @@ class BookAdapterForDetails(
 
         init {
             itemView.setOnClickListener {
-                onBookSelected(books[adapterPosition]) // Обработка нажатия на книгу
+                onBookSelected(books[adapterPosition]) // починит
             }
         }
     }
@@ -36,7 +36,7 @@ class BookAdapterForDetails(
         val book = books[position]
         holder.titleTextView.text = book.title
         holder.authorTextView.text = book.author
-        holder.imageView.setImageResource(book.coverImageRes) // Устанавливаем изображение книги
+        holder.imageView.setImageResource(book.coverImageRes)
     }
 
     override fun getItemCount() = books.size

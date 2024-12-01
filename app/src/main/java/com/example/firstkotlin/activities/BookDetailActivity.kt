@@ -12,8 +12,7 @@ class BookDetailActivity : AppCompatActivity() {
     private lateinit var bookRepository: BookRepository
     private lateinit var bookId: String
     private var currentPage: Int = 0
-    private lateinit var pages: List<String>  // Список страниц книги
-
+    private lateinit var pages: List<String>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_book_detail)

@@ -3,9 +3,9 @@ package com.example.firstkotlin.data
 data class Book (
     val id: String,
     val title: String,
-    val totalPages: Int,    // Общее количество страниц
-    val currentPage: Int,   // Текущая страница
-    val progress: Int, // Прогресс (в процентах)
+    val totalPages: Int,
+    val currentPage: Int,
+    val progress: Int,
     val text: String,
     val genre: String,
     val description: String,

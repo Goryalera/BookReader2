@@ -14,7 +14,7 @@ class BookDisplayActivity : AppCompatActivity() {
         val bookImageView = findViewById<ImageView>(R.id.book_image_view)
 
         if (bookImageId != -1) {
-            bookImageView.setImageResource(bookImageId) // Установка изображения
+            bookImageView.setImageResource(bookImageId)
         }
     }
 }

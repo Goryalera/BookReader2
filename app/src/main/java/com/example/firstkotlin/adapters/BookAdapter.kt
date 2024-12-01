@@ -9,7 +9,7 @@ import com.example.firstkotlin.R
 //для изображений книг
 class BookAdapter(
     private val bookImages: List<Int>,
-    private val onBookSelected: (Int) -> Unit // Функция для обработки нажатия на книжку
+    private val onBookSelected: (Int) -> Unit
 ) : RecyclerView.Adapter<BookAdapter.BookViewHolder>() {
 
     inner class BookViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -17,7 +17,7 @@ class BookAdapter(
 
         init {
             imageView.setOnClickListener {
-                onBookSelected(bookImages[adapterPosition]) // Обработка нажатия
+                onBookSelected(bookImages[adapterPosition]) //починит
             }
         }
     }
@@ -28,7 +28,7 @@ class BookAdapter(
     }
 
     override fun onBindViewHolder(holder: BookViewHolder, position: Int) {
-        holder.imageView.setImageResource(bookImages[position]) // Установите изображение книги
+        holder.imageView.setImageResource(bookImages[position])
 
     }
 
